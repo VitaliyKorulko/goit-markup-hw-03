@@ -2,7 +2,28 @@
     --header-color:#757575;
     --btn-color: #FFFFFF;
     --primery-color: #212121;
+    --primery-bottom: 94px;
+    --primery-margin: 30px;
     }
+
+.p,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,{
+    margin:0
+}
+
+.ul,ol{
+    padding-left: 0;
+    margin: 0;
+}
+ button{
+     cursor: pointer;
+ }
+
 
 
 
@@ -80,6 +101,11 @@ body{
 }
 /* ----------------Buttons-------------------------- */
 .hero-btn{
+    display: inline-block;
+    padding: 6px 22px;
+    min-width: 73px;
+    border-radius: 4px;
+
     font-family:inherit;
     font-weight: 500;
     font-size: 16px;
@@ -90,6 +116,11 @@ body{
     background-color: #FFFFFF;
     border: none;
   }
+ .hero-list{
+     display: flex;
+     justify-content: center;
+     
+ }
 
 .hero-btn:hover,
 .hero-btn:focus{
@@ -99,8 +130,26 @@ body{
 
 .list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 /* ----------------Projects---------------------- */
+
+.resume-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+
+}
+.resume-item{
+    width: calc(100% / 3 -30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+
+
 .resume-caption {
     font-size: 18px;
     line-height: 2;
@@ -151,6 +200,7 @@ body{
     list-style: none;
 }
 .footer-item{
+    padding-bottom: 9px;
     font-weight: 400;
     font-style: normal;
     font-size: 14px;
@@ -161,6 +211,7 @@ body{
 }
 
 .footer-item-top{
+    padding-bottom: 9px;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -171,6 +222,8 @@ body{
 }
 
 .footer-logo link{
+    padding-top: 60px;
+    margin-bottom: 20px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -179,6 +232,9 @@ body{
     letter-spacing: 0.03em;
     color: #FFFFFF;
 }
+.footer-list{
+    margin-bottom: 60px;
+}
  
 /* ---------------Index-HEADER------------- */
 .title-button:hover,
@@ -186,23 +242,90 @@ body{
     background-color: #188CE8;
 }
 
+.container {
+    width: 1200px;
+    margin-right: auto; 
+    margin-left: auto;
+    padding:0 15px 0 15px;
+    outline: 1px solid red;
+}
+
+.header{
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+.header-list{
+    display: flex;
+}
+
+.header-contacts{
+    display: flex;
+    
+    
+}
+
+.header .container{
+    display: flex;
+    align-items: center;
+}
+
+.header-logo{
+    margin-right: 93px;
+
+}
+.header-connect{
+    margin-left: auto;
+}
+.header-item:not(:last-child){
+    margin-right: 50px;
+}
+
+.header-mail:not(:last-child){
+    margin-right: 50px;
+}
  /* --------------ЗАГОВОК------------------- -- */
+
+
 
  .title{
      background-color: #2F303A;
+    text-align: center;
+    
+    flex-grow: 1;
  } 
+
+ .title-top-text{
+     margin-bottom: 50px;
+ }
+
+ .title-top-text-list{
+    display: flex;
+
+ }
+ .photo{
+     margin-right: 30px;
+     
+ }
  .title-text{
+    margin-top: 0;
+    margin-bottom: 40;
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.36;  
-    text-align: center;
+    line-height: 1.36; 
+    display: block;
+   
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
  }
  .title-button{
+    display: inline-block;
+    padding: 10px 32px;
     font-weight: 700;
     font-size: 16px;
+    border-radius: 4px;
+
+
     line-height: 1.88;
     display: flex;
     align-items: center;
@@ -214,8 +337,18 @@ body{
  }
 
 /* ------------Чем занмаемся----------------- */
+.headline{
+padding-bottom: var(--primery-bottom);
+}
+
+.headline-list{
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
 
 .headline-title {
+    
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -225,6 +358,8 @@ body{
 }
 
 .headline-subtitle {
+    max-width: 270px;
+    padding-top: 10px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -233,7 +368,13 @@ body{
 }
 
 /* -----------------чем занимаемся------------------ */
+.title-top{
+    padding-bottom: var(--primery-bottom);
+}
+
 .title-top-text{
+    margin-top: 0;
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -243,8 +384,13 @@ body{
 }
 
 /* -----------------Команда----------------- */
+.subject-top{
+    padding-bottom: var(--primery-bottom);
+}
 
 .subject{
+    margin-top: 0;
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -254,6 +400,7 @@ body{
 }
 
 .subject-text {
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19; 
@@ -270,7 +417,9 @@ body{
     letter-spacing: 0.03em;
     color: #757575;
 }
-
+.subject-list{
+    display: flex;
+}
 
 .color-title{
     color: #F5F4FA;
