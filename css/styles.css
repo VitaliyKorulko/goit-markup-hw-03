@@ -6,6 +6,9 @@
     --primery-margin: 30px;
     }
 
+   
+    
+
 .p,
 .h1,
 .h2,
@@ -136,6 +139,7 @@ body{
 /* ----------------Projects---------------------- */
 
 .resume-list{
+    padding-bottom: var(--primery-bottom);
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
@@ -178,12 +182,15 @@ body{
 
 .footer{
     background-color: #2F303A;
+    
 }
 .footer-logo > span{
     font-family: 'Raleway';
     color: #2196F3;
+    
 }
 .footer-logo{
+    
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -199,6 +206,7 @@ body{
 .list {
     list-style: none;
 }
+
 .footer-item{
     padding-bottom: 9px;
     font-weight: 400;
@@ -223,7 +231,7 @@ body{
 
 .footer-logo link{
     padding-top: 60px;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -233,7 +241,7 @@ body{
     color: #FFFFFF;
 }
 .footer-list{
-    margin-bottom: 60px;
+   
 }
  
 /* ---------------Index-HEADER------------- */
@@ -289,13 +297,15 @@ body{
 
  .title{
      background-color: #2F303A;
-    text-align: center;
-    
+     text-align: center;
+    left: 0px;
+    top: 80px;
     flex-grow: 1;
  } 
 
  .title-top-text{
-     margin-bottom: 50px;
+     
+    
  }
 
  .title-top-text-list{
@@ -308,7 +318,8 @@ body{
  }
  .title-text{
     margin-top: 0;
-    margin-bottom: 40;
+    margin-bottom: 30px;
+    padding-top: 200px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36; 
@@ -318,6 +329,7 @@ body{
     text-transform: uppercase;
     color: #FFFFFF;
  }
+ 
  .title-button{
     display: inline-block;
     padding: 10px 32px;
@@ -325,9 +337,7 @@ body{
     font-size: 16px;
     border-radius: 4px;
 
-
     line-height: 1.88;
-    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
@@ -343,12 +353,13 @@ padding-bottom: var(--primery-bottom);
 
 .headline-list{
     display: flex;
+    
     margin-top: 0;
     margin-bottom: 10px;
 }
 
 .headline-title {
-    
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -358,7 +369,10 @@ padding-bottom: var(--primery-bottom);
 }
 
 .headline-subtitle {
+    display: flex;
     max-width: 270px;
+    flex-basis: calc(100% / 4 - 30px);
+    margin-bottom: 30px;
     padding-top: 10px;
     font-weight: 400;
     font-size: 14px;
@@ -368,6 +382,7 @@ padding-bottom: var(--primery-bottom);
 }
 
 /* -----------------чем занимаемся------------------ */
+
 .title-top{
     padding-bottom: var(--primery-bottom);
 }
@@ -410,6 +425,7 @@ padding-bottom: var(--primery-bottom);
 }
 
 .subject-item{
+    margin-bottom: 30px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
