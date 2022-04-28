@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./index.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-
+   
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
@@ -27,12 +27,11 @@
       <li class="header-item"><a href="" class="header-link link">Контакты</a></li>
       </ul>
     </nav>
-    <div class="header-connect">
+    
     <ul class="header-contacts list">
     <li class="header-mail links"><a class="header-mail links" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
     <li class="header-tel links"><a class="header-mail links" href="tel:+38 096 111 11 11">+38 096 111 11 11</a></li>
     </ul>
-    </div>
     </div>
   </header>
 <!-- --------------ЗАГОВОК------------------- -->
@@ -48,19 +47,19 @@
     <section class="headline">
       <div class="container">
     <ul class="headline-list list">
-     <li>
+     <li class="headline-child">
        <h3 class="headline-title">Внимание к деталям</h3>
        <p  class="headline-subtitle">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
       </li>
-     <li>
+     <li class="headline-child">
        <h3 class="headline-title">Пунктуальность</h3>
        <p class="headline-subtitle">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
       </li>
-     <li>
+     <li class="headline-child">
        <h3 class="headline-title">Планирование</h3>
        <p class="headline-subtitle">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
       </li>
-     <li>
+     <li class="headline-child">
        <h3 class="headline-title">Современные технологии</h3>
       <p class="headline-subtitle">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
     </li>
@@ -72,9 +71,9 @@
       <div class="container">
       <h2 class="title-top-text">Чем мы занимаемся</h2>
       <ul class="title-top-text-list list">
-        <li class="photo"><img src="./img/device/pc.jpg" alt="компьютер" width="370" height="294"></li>
-        <li class="photo"><img src="./img/device/phone.jpg" alt="телефоны" width="370" height="294"></li>
-        <li class="photo"><img src="./img/device/tablet.jpg" alt="планшет" width="370" height="294"></li>
+        <li class="photo"><img class="image" src="./img/device/pc.jpg" alt="компьютер" width="370" height="294"></li>
+        <li class="photo"><img class="image" src="./img/device/phone.jpg" alt="телефоны" width="370" height="294"></li>
+        <li class="photo"><img class="image" src="./img/device/tablet.jpg" alt="планшет" width="370" height="294"></li>
       </ul> 
       </div>
     </section>
@@ -84,22 +83,22 @@
       <h2 class="subject" >Наша команда</h2>
       <ul class="subject-list list">
         <li class="color-title">
-          <img class="photo" src="./img/speaker/pd.jpg" alt="product_designer" width="270" height="260" >
+          <img class="image-top" src="./img/speaker/pd.jpg" alt="product_designer" width="270" height="260" >
           <h3  class="subject-text">Игорь Демьяненко</h3>
           <p  class="subject-item">Product Designer</p>
         </li>
-        <li>
-          <img class="photo" src="./img/speaker/frontend.jpg" alt="front_end_developer" width="270" height="260">
+        <li class="color-title">
+          <img class="image-top" src="./img/speaker/frontend.jpg" alt="front_end_developer" width="270" height="260">
           <h3 class="subject-text">Ольга Репина</h3>
           <p class="subject-item">Frontend Developer</p>
         </li>
-        <li>
-          <img class="photo" src="./img/speaker/marketing.jpg" alt="marketing" width="270" height="260">
+        <li class="color-title">
+          <img class="image-top" src="./img/speaker/marketing.jpg" alt="marketing" width="270" height="260">
           <h3 class="subject-text">Николай Тарасов</h3>
           <p class="subject-item">Marketing</p>
         </li>
-        <li>
-          <img class="photo" src="./img/speaker/uidesigner.jpg" alt="ui_d" width="270" height="260">
+        <li class="color-title">
+          <img class="image-top" src="./img/speaker/uidesigner.jpg" alt="ui_d" width="270" height="260">
           <h3 class="subject-text">Михаил Ермаков</h3>
           <p class="subject-item">UI Designer</p>
         </li>

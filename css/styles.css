@@ -36,6 +36,10 @@ body{
     
 }
 /* -------WebSudio----------------- */
+.header-logo{
+    
+
+}
 .header-link{
     font-weight: 500;
     font-size: 14px;
@@ -105,6 +109,7 @@ body{
 /* ----------------Buttons-------------------------- */
 .hero-btn{
     display: inline-block;
+    margin-bottom: 34px;
     padding: 6px 22px;
     min-width: 73px;
     border-radius: 4px;
@@ -123,7 +128,15 @@ body{
      display: flex;
      justify-content: center;
      
+     
  }
+
+ .hero-item:not(:last-child){
+     margin-right: 8px;
+ }
+ 
+ 
+
 
 .hero-btn:hover,
 .hero-btn:focus{
@@ -138,6 +151,11 @@ body{
 }
 /* ----------------Projects---------------------- */
 
+.resume{
+    margin-top: 94px;
+    
+}
+
 .resume-list{
     padding-bottom: var(--primery-bottom);
     display: flex;
@@ -151,8 +169,6 @@ body{
     margin-left: 30px;
     margin-bottom: 30px;
 }
-
-
 
 .resume-caption {
     font-size: 18px;
@@ -190,7 +206,9 @@ body{
     
 }
 .footer-logo{
-    
+    display: block;
+    padding-top: 60px;
+    margin-bottom: 20px;
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -241,7 +259,8 @@ body{
     color: #FFFFFF;
 }
 .footer-list{
-   
+   margin-top: 20px;
+   padding-bottom: 60px;
 }
  
 /* ---------------Index-HEADER------------- */
@@ -255,12 +274,28 @@ body{
     margin-right: auto; 
     margin-left: auto;
     padding:0 15px 0 15px;
-    outline: 1px solid red;
+    
 }
 
 .header{
-    padding-top: 24px;
-    padding-bottom: 25px;
+    border: 1px;
+    color: #ECECEC;
+}
+.header-site{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+}
+
+
+
+.header-link{
+    flex-basis: calc(100% / 3 - 50px);
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
 }
 .header-list{
     display: flex;
@@ -268,6 +303,7 @@ body{
 
 .header-contacts{
     display: flex;
+    margin-left: auto;
     
     
 }
@@ -281,9 +317,7 @@ body{
     margin-right: 93px;
 
 }
-.header-connect{
-    margin-left: auto;
-}
+
 .header-item:not(:last-child){
     margin-right: 50px;
 }
@@ -298,28 +332,21 @@ body{
  .title{
      background-color: #2F303A;
      text-align: center;
-    left: 0px;
-    top: 80px;
-    flex-grow: 1;
+     padding-top: 200px;
+     padding-bottom: 200px;
+    
  } 
 
- .title-top-text{
-     
-    
- }
+ 
 
  .title-top-text-list{
     display: flex;
 
  }
- .photo{
-     margin-right: 30px;
-     
- }
+ 
  .title-text{
     margin-top: 0;
     margin-bottom: 30px;
-    padding-top: 200px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36; 
@@ -348,17 +375,21 @@ body{
 
 /* ------------Чем занмаемся----------------- */
 .headline{
-padding-bottom: var(--primery-bottom);
+    padding-top: var(--primery-bottom);
+    padding-bottom: var(--primery-bottom);
 }
+.headline-child:not(:last-child){
+    margin-right: 30px;
 
+}
 .headline-list{
     display: flex;
-    
     margin-top: 0;
     margin-bottom: 10px;
 }
 
 .headline-title {
+    margin-top: 0;
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
@@ -370,10 +401,6 @@ padding-bottom: var(--primery-bottom);
 
 .headline-subtitle {
     display: flex;
-    max-width: 270px;
-    flex-basis: calc(100% / 4 - 30px);
-    margin-bottom: 30px;
-    padding-top: 10px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -398,12 +425,30 @@ padding-bottom: var(--primery-bottom);
     color: #212121;
 }
 
+.photo:not(:last-child){
+    margin-right: 30px;
+
+}
+
+.image{
+    display: block;
+}
+
 /* -----------------Команда----------------- */
 .subject-top{
     padding-bottom: var(--primery-bottom);
 }
 
+.color-title:not(:last-child){
+    margin-right: 30px;
+}
+.image-top{
+    display: block;
+    margin-bottom: 30px;
+}
+
 .subject{
+    padding-top: 94px;
     margin-top: 0;
     margin-bottom: 50px;
     font-weight: 700;
@@ -437,7 +482,7 @@ padding-bottom: var(--primery-bottom);
     display: flex;
 }
 
-.color-title{
-    color: #F5F4FA;
-}
+
+
+
 
