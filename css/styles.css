@@ -9,13 +9,13 @@
    
     
 
-.p,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,{
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,{
     margin:0
 }
 
@@ -109,7 +109,7 @@ body{
 /* ----------------Buttons-------------------------- */
 .hero-btn{
     display: inline-block;
-    margin-bottom: 34px;
+   
     padding: 6px 22px;
     min-width: 73px;
     border-radius: 4px;
@@ -125,8 +125,10 @@ body{
     border: none;
   }
  .hero-list{
+     
      display: flex;
      justify-content: center;
+     margin-bottom: 50px;
      
      
  }
@@ -152,12 +154,21 @@ body{
 /* ----------------Projects---------------------- */
 
 .resume{
-    margin-top: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
+}
+
+.resume-graph{
+   border-right: 1px #EEEEEE;
+   border-bottom: 1px #EEEEEE;
+   border-left: 1px #EEEEEE;
+
+    
     
 }
 
 .resume-list{
-    padding-bottom: var(--primery-bottom);
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
@@ -171,18 +182,27 @@ body{
 }
 
 .resume-caption {
+    margin:0;
+    margin-bottom: 4px;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: #212121;
+    
 }
 
 .resume-paragraph {
+    margin:0;
     font-family: 'Roboto';
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
-    color: var(--header-color)
+    color: var(--header-color);
+    
+    
+}
+.port{
+    text-decoration: none;
 }
     
 
@@ -198,7 +218,8 @@ body{
 
 .footer{
     background-color: #2F303A;
-    
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .footer-logo > span{
     font-family: 'Raleway';
@@ -207,7 +228,7 @@ body{
 }
 .footer-logo{
     display: block;
-    padding-top: 60px;
+   
     margin-bottom: 20px;
     font-family: 'Raleway';
     font-weight: 700;
@@ -226,7 +247,7 @@ body{
 }
 
 .footer-item{
-    padding-bottom: 9px;
+    margin-bottom: 9px;
     font-weight: 400;
     font-style: normal;
     font-size: 14px;
@@ -236,8 +257,12 @@ body{
     text-decoration: none;
 }
 
+.footer-item:last-child{
+    margin-bottom: 0;
+}
+
 .footer-item-top{
-    padding-bottom: 9px;
+    margin-bottom: 9px;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -258,10 +283,7 @@ body{
     letter-spacing: 0.03em;
     color: #FFFFFF;
 }
-.footer-list{
-   margin-top: 20px;
-   padding-bottom: 60px;
-}
+
  
 /* ---------------Index-HEADER------------- */
 .title-button:hover,
@@ -382,10 +404,15 @@ body{
     margin-right: 30px;
 
 }
+
+.headline-child{
+    width: 270px;
+}
+
 .headline-list{
     display: flex;
     margin-top: 0;
-    margin-bottom: 10px;
+    
 }
 
 .headline-title {
@@ -400,6 +427,7 @@ body{
 }
 
 .headline-subtitle {
+    margin:0;
     display: flex;
     font-weight: 400;
     font-size: 14px;
@@ -436,6 +464,7 @@ body{
 
 /* -----------------Команда----------------- */
 .subject-top{
+    padding-top: var(--primery-bottom);
     padding-bottom: var(--primery-bottom);
 }
 
@@ -444,11 +473,10 @@ body{
 }
 .image-top{
     display: block;
-    margin-bottom: 30px;
+    
 }
 
 .subject{
-    padding-top: 94px;
     margin-top: 0;
     margin-bottom: 50px;
     font-weight: 700;
@@ -457,6 +485,11 @@ body{
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+}
+
+.subject-padding{
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .subject-text {
@@ -470,7 +503,6 @@ body{
 }
 
 .subject-item{
-    margin-bottom: 30px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
