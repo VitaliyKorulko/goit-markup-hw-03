@@ -130,9 +130,10 @@ body{
      justify-content: center;
      margin-bottom: 50px;
      
-     
  }
 
+ 
+ }
  .hero-item:not(:last-child){
      margin-right: 8px;
  }
@@ -149,7 +150,7 @@ body{
 .list {
     list-style: none;
     padding: 0;
-    margin: 0;
+    
 }
 /* ----------------Projects---------------------- */
 
@@ -163,7 +164,11 @@ body{
    border-right: 1px #EEEEEE;
    border-bottom: 1px #EEEEEE;
    border-left: 1px #EEEEEE;
-
+   padding-top: 20px;
+   padding-right: 24px;
+   padding-bottom: 20px;
+   padding-left: 24px;
+    
     
     
 }
