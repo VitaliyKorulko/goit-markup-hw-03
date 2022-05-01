@@ -7,7 +7,9 @@
     }
 
    
-    
+    .img{
+        display: block;
+    }
 
 p,
 h1,
@@ -16,7 +18,8 @@ h3,
 h4,
 h5,
 h6,{
-    margin:0
+    margin:0;
+    
 }
 
 .ul,ol{
@@ -121,13 +124,14 @@ body{
     letter-spacing: 0.03em;
     cursor: pointer;
     color: #212121;
-    background-color: #FFFFFF;
+    background-color: #F5F4FA;
     border: none;
   }
  .hero-list{
      
      display: flex;
      justify-content: center;
+     margin-top: 0;
      margin-bottom: 50px;
      
  }
@@ -161,9 +165,9 @@ body{
 }
 
 .resume-graph{
-   border-right: 1px #EEEEEE;
-   border-bottom: 1px #EEEEEE;
-   border-left: 1px #EEEEEE;
+   border-right: 1px solid #EEEEEE;
+   border-bottom: 1px solid #EEEEEE;
+   border-left: 1px solid #EEEEEE;
    padding-top: 20px;
    padding-right: 24px;
    padding-bottom: 20px;
@@ -178,10 +182,11 @@ body{
     flex-wrap: wrap;
     margin-left: -30px;
     margin-bottom: -30px;
+    margin-top: 0;
 
 }
 .resume-item{
-    width: calc(100% / 3 -30px);
+    width: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-bottom: 30px;
 }
@@ -198,7 +203,6 @@ body{
 
 .resume-paragraph {
     margin:0;
-    font-family: 'Roboto';
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
@@ -250,7 +254,10 @@ body{
 .list {
     list-style: none;
 }
-
+.footer-list{
+    margin-top: 0;
+    margin-bottom: 0;
+}
 .footer-item{
     margin-bottom: 9px;
     font-weight: 400;
@@ -326,11 +333,15 @@ body{
 }
 .header-list{
     display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .header-contacts{
     display: flex;
     margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
     
     
 }
@@ -417,6 +428,7 @@ body{
 .headline-list{
     display: flex;
     margin-top: 0;
+    margin-bottom: 0;
     
 }
 
@@ -446,7 +458,10 @@ body{
 .title-top{
     padding-bottom: var(--primery-bottom);
 }
-
+.title-top-text-list{
+    margin-top: 0;
+    margin-bottom: 0;
+}
 .title-top-text{
     margin-top: 0;
     margin-bottom: 50px;
@@ -463,12 +478,13 @@ body{
 
 }
 
-.image{
+.img{
     display: block;
 }
 
 /* -----------------Команда----------------- */
 .subject-top{
+    background-color: #F5F4FA;
     padding-top: var(--primery-bottom);
     padding-bottom: var(--primery-bottom);
 }
@@ -498,6 +514,7 @@ body{
 }
 
 .subject-text {
+    margin-top: 30px;
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
@@ -508,6 +525,8 @@ body{
 }
 
 .subject-item{
+    margin-top: 0;
+    margin-bottom: 30px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
@@ -517,6 +536,8 @@ body{
 }
 .subject-list{
     display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 
