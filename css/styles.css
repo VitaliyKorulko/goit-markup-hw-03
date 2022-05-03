@@ -135,9 +135,9 @@ body{
      margin-bottom: 50px;
      
  }
-
  
- }
+ 
+ 
  .hero-item:not(:last-child){
      margin-right: 8px;
  }
@@ -312,8 +312,8 @@ body{
 }
 
 .header{
-    border: 1px;
-    color: #ECECEC;
+    border-bottom: 1px solid #ECECEC ;
+   
 }
 .header-site{
     display: block;
@@ -478,7 +478,7 @@ body{
 
 }
 
-.img{
+.image{
     display: block;
 }
 
@@ -514,7 +514,6 @@ body{
 }
 
 .subject-text {
-    margin-top: 30px;
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
@@ -526,7 +525,6 @@ body{
 
 .subject-item{
     margin-top: 0;
-    margin-bottom: 30px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
